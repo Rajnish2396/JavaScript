@@ -1,7 +1,5 @@
 
-/* 
-
-================= List of Perimitive Data Type ==============================*
+/* ================= List of Perimitive Data Type ==============================*
     1. Number
     2. string
     3. boolean
