@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script>
+		//1 .print “Hello” from let a= “Hello World”
+			/*let a = "Hello World"
+			console.log(a.slice(0, 5))*/
+
+		//2. print “XXXXXXX12” from let b= 12999
+			/*let b = "12999999999";
+			console.log(b.slice(0, 2).padStart(10, "X"))
+			console.log(b.slice(0, 2).padEnd(10, "X"))*/
+
+		//3. Create an Array [Ram , Suresh, Mahesh]  from given from  let a = "Ram Suresh Mahes is my Friend"
+			/*let str =  "Ram Suresh Mahes is my Friend"
+			let output1 = str.split(" ", 3)
+			console.log(output1)*/
+
+		//5. Remove "Mayank", "Suresh  from Geffen array let employ = ["Ram", "Mayank", "Suresh", "Gagan", "Kamla"]; 
+			// let employ = ["Ram", "Mayank", "Suresh", "Gagan", "Kamla"];
+			// employ.splice(1, 1)
+			// console.log(employ)
+
+		//6. Reverse array value from given array using while loop
+			/*
+				let arr = [10, 12, 6, 20, 30];
+				let reverseM = []
+			    let i = arr.length-1;
+				while (i >=0) {
+				  reverseM.push(arr[i])
+				  i--;
+				}
+				console.log(reverseM)
+
+			*/
+
+		//6. Reverse array value from given array using while loop
+			// let arr1 = [10, 12, 6, 20, 30, 30, 20];
+			// let uniqueArr = []
+			// for(let i =0; i<= arr1.length-1; i++){
+			// 	if(uniqueArr.indexOf(arr1[i])== -1){
+			// 		uniqueArr.push(arr1[i])
+			// 	}				
+			//  }
+			//  console.log(uniqueArr)	
+
+		//7. Find the maximum  number from given array 
+			 // let arr1 = [10, 12, 6, 20, 30, 30, 20];
+			 // let max = arr1[0]
+
+			 // for(let i =0; i<arr1.length-1; i++){
+			 // 	//console.log(i)
+			 // 	if(arr1[i]>max){
+			 // 		max = arr1[i]
+			 // 	}
+			 // }
+			 // console.log(max)
+
+		//8. Find even number from 1 to 100 
+		    /*for(let i = 0; i<=100; i++){
+		    	if(i%2 ==0){
+		    		console.log(i)
+		    	}
+		    }
+		    */
+
+		//9. Add array value using forEach Method
+			/*
+				let arr1 = [10, 12, 6, 20, 30, 30, 20];
+				let total =0;
+				let outPut =arr1.forEach((x)=>{
+					total += x
+				})
+				console.log(total)
+			*/
+
+
+		//10. find Positive & negative Value from array using forEach()
+		  // let arr1 = [10, 12, 6, -6, 20, -20, 30, -30, 30, 20, -20];
+		// 	let neagativeValue = [] ;
+		// 	let positiveValue = [];
+
+		// 	arr1.forEach((x)=>{
+		// 		if(x<0 && neagativeValue.indexOf(x)== -1){
+		// 	 		neagativeValue.push(x)
+		// 		  }
+		// 		  else if(x>0 && positiveValue.indexOf(x)== -1){
+		// 		  	positiveValue.push(x)
+		// 		  }
+		// 	})
+
+		// 	console.log(neagativeValue)
+		// 	console.log(positiveValue)
+
+		//11. find unique Value from array using forEach()
+			// let arr1 = [10, 12, 6, -6, 20, -20, 30, -30, 30, 20, -20];
+			// let uniqueArr =[]
+			// arr1.forEach((x)=>{
+			// 	if(uniqueArr.indexOf(x) == -1){
+			// 		uniqueArr.push(x)
+
+			// 	}
+			// })
+			// console.log(uniqueArr)
+
+		//12. find max Value from array using forEach()
+			/*
+				let arr1 = [10, 12, 6, -6, 20, -20, 30, -30, 30, 20, -20, 100];
+				let mxValue = 0;
+				arr1.forEach((x)=>{
+					if(x>mxValue){
+						mxValue =x
+					}
+				})
+				console.log(mxValue)
+			*/
+
+	    //13. Create Duble Array using map ()
+	    	/*
+		    let arr1 = [10, 12, 6, 20, 100];
+			   let output =  arr1.map((x)=>{
+			   		return x*2
+			    })
+			   console.log(output)
+		   */
+
+
+		//14. add discound key in json using map ()
+			/*let product = [
+					{item : 1, name : "Computer", price :200},
+					{item : 2, name : "Laptop", price :300},
+					{item : 3, name : "Moniter", price :500},
+					{item : 4, name : "Moniter", price :600}
+				]
+
+			let newProduct = product.map((x)=>{
+				return {...x, discount: x.price*0.2}
+
+			})
+			console.log(newProduct)
+			*/
+
+		//15. add category = child/adult when age is 18 years using map ()
+
+			/*
+				let student = [
+						{id:1, name : "Rajnish", age: 12},
+						{id:2, name : "Suresh", age: 20},
+						{id:3, name : "Gagan", age: 25},
+						{id:4, name : "Mayank", age: 30},
+						{id:5, name : "Suresh", age: 16},
+						{id:6, name : "Suresh", age: 17},
+					]
+
+
+				let updateUser = student.map((x)=>{
+					return {...x,  category : x.age >=18 ? "Adult" : "Child" }
+				})
+				console.log(updateUser)
+			*/
+
+		//16. Create a new array form given even number
+		   /*
+			   let arr = [2, 5, 7, 6, 10, 11, 12, 13, 14, 15, 16]
+			   let output = arr.filter((x)=>{
+			   		return x %2==0
+			   })
+			   console.log(output)
+		   */
+
+		//17. Find active user from json
+
+		  // const users = [
+		  //       { name: "Alice", active: true },
+		  //       { name: "Bob", active: false },
+		  //       { name: "Charlie", active: true },
+		  //       { name: "David", active: false }
+    	// 	];
+
+		  // let activeUser = users.filter((x)=>{
+		  // 		return x.active
+		  // })
+
+		  // console.log(activeUser)
+
+
+
+		  //18.	Find Product based on price when less then 500
+
+		   /*const products = [
+			        { name: "Laptop", price: 1200 },
+			        { name: "Phone", price: 800 },
+			        { name: "Tablet", price: 300 },
+			        { name: "Monitor", price: 200 }
+			    ];
+
+			   let output = products.filter((x)=>{
+			   		return x.price > 500
+			   	})
+			   console.log(output)
+		*/
+
+
+		//19. filter words that less then or equal 5 character
+			/*
+			    const words = ["apple", "banana", "grape", "orange", "kiwi", "mango"];
+			    let output = words.filter((x)=>{
+			    	return x.length <=5
+			    })
+			    console.log(output)
+		    */
+
+		//20. filter based grad from array
+		    const students = [
+		        { name: "John", grade: 85 },
+		        { name: "Jane", grade: 92 },
+		        { name: "Tom", grade: 67 },
+		        { name: "Emily", grade: 74 }
+		    ];
+
+		    let topgrade =students[0].grade;
+		
+
+		    let topperStudent = students.filter((x)=>{
+		       topgrade < x.grade ? topgrade = x.grade :null
+
+		      return topgrade == x.grade
+		    })
+		    console.log(topperStudent)
+
+
+
+
+	</script>
+
+
+</body>
+</html>
