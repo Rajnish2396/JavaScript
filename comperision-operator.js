@@ -8,6 +8,7 @@
 6. >= greater then or equal to
 7. < less then
 8. <= less then or equal to
+
 */
 const f1 = 5;
 const f2 = 6;

@@ -14,7 +14,7 @@ const zeros = 0;
 
 
 // ==========A. Context Memory=============================
-    Context : JavaScript's engine creates a "context" when receiving a script file, known as "Global Execution Context (GEC)".
+    Context : JavaScript's engine creates a "context (anonymous)" when receiving a script file, known as "Global Execution Context (GEC)".
       *. context has script file. for ex = "variable", "Object", "Object Key"
       *. context has also own memory 
       *. All "variables" has same Context memory

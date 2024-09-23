@@ -1,5 +1,6 @@
   /*================================================================================== 
                        CREATE OBJECT AND ACCESS HERE 
+
   ===================================================================================*/
 
    //1. create object   
@@ -96,6 +97,8 @@
       *. context has script file. for ex = "variable", "Object", "Object Key"
       *. context has also own memory 
       *. All "variables", "objects", "object keys" has same Context memory
+      *. when we want unknow key of object then he return "undefined"
+           for ex  let user3 = {}; console.log(user3.name) // undefined
 
 
 // ========== B. Object Memory=============================
